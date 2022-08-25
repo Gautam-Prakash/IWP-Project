@@ -21,41 +21,45 @@
 </head>
 
 <body>
-<p></p>
+  <p></p>
 
   <!-- COLLAPSABLE CONTENT -->
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-          <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark ">
+          <div class="container-fluid d-flex justify-content-evenly">
+            <div class="container-fluid">
 
+              <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <p class="fw-bolder text-light">Unity WebGL Player</p>
 
-            <a class="navbar-brand" href="#">
-              <img src="logo.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
-      
-            </a>
-    
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
+              </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
 
@@ -64,8 +68,8 @@
       </div>
     </div>
 
-<!-- SECOND NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark">
+    <!-- SECOND NAVBAR -->
+    <nav class="navbar navbar-dark text-light  bg-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
         aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,6 +79,40 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </nav>
+  </div>
+
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/random" class="d-block w-100 h-100px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/random" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/random" class="d-block w-100 h-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
 
@@ -107,6 +145,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+  <!-- Carousel -->
+  <script language="JavaScript" type="text/javascript">
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 3000
+      })
+    }); 
+  </script>
 
 </body>
 
