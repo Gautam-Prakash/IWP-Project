@@ -1,75 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-
-
 <body>
-    <div id="wrapper">
-        <div class="overlay"></div>
-         
-             <!-- Sidebar -->
-         <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
-          <ul class="nav sidebar-nav">
-            <div class="sidebar-header">
-            <div class="sidebar-brand">
-              <a href="#">Brand</a></div></div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#team">Team</a></li>
-            <li class="dropdown">
-            <a href="#works" class="dropdown-toggle"  data-toggle="dropdown">Works <span class="caret"></span></a>
-          <ul class="dropdown-menu animated fadeInLeft" role="menu">
-           <div class="dropdown-header">Dropdown heading</div>
-           <li><a href="#pictures">Pictures</a></li>
-           <li><a href="#videos">Videeos</a></li>
-           <li><a href="#books">Books</a></li>
-           <li><a href="#art">Art</a></li>
-           <li><a href="#awards">Awards</a></li>
-           </ul>
-           </li>
-           <li><a href="#services">Services</a></li>
-           <li><a href="#contact">Contact</a></li>
-           <li><a href="#followme">Follow me</a></li>
-           </ul>
-       </nav>
-             <!-- /#sidebar-wrapper -->
-     
-             <!-- Page Content -->
-             <div id="page-content-wrapper">
-                 <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-                     <span class="hamb-top"></span>
-                     <span class="hamb-middle"></span>
-                     <span class="hamb-bottom"></span>
-                 </button>
-                 <div class="container">
-                     <div class="row">
-                         <div class="col-lg-8 col-lg-offset-2">
-                             <h1>Fancy Toggle Sidebar Navigation</h1>
-                             <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank </p>
-                             <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
-                             <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
-                             <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
-                             <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow, boudin pork chop sausage tongue andouille turkey.</p>                         
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <!-- /#page-content-wrapper -->
-     
-         </div>
-         <!-- /#wrapper -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                EiichePie
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Bootstrap Js Link -->
+    <nav style="--bs-breadcrumb-divider: '  '; " aria-label="breadcrumb">
+        <ol class="breadcrumb gap-2 flex justify-content-center ">
+            <li class="breadcrumb-item">
+                <a href="#">
+                    <button type="button" class="btn btn-light">Light</button>
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">
+                    <button type="button" class="btn btn-light">Light</button>
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">
+                    <button type="button" class="btn btn-light">Light</button>
+                </a>
+            </li>
+        </ol>
+    </nav>
+
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dolor pariatur dicta consequuntur quam
+        maxime animi, provident iste quisquam. Ipsa, eaque temporibus hic numquam a voluptas magni ipsum illum dolorem
+        id, at doloribus itaque atque. Cumque quam quidem veniam. Labore ullam officiis, error voluptatem velit quaerat
+        hic maxime sed, obcaecati cumque perspiciatis expedita, dolorem ab voluptatibus ipsa qui. Repudiandae ducimus
+        minus odit, officia dolorem culpa aperiam blanditiis quisquam in animi labore amet fugiat, libero non molestias,
+        nemo illum. Sapiente ducimus nihil fugit quasi fugiat? Aspernatur tempora neque tempore beatae delectus aperiam
+        earum, nobis minus dicta deleniti, aliquam sunt doloribus esse magnam ullam voluptate assumenda id sint quo
+        quidem! Accusamus deleniti labore doloremque nemo fugit tempore velit sunt voluptatum, aspernatur officia ipsa
+        dolor aliquam! Commodi, deserunt ut quisquam incidunt veritatis id, officiis quibusdam explicabo quo, aliquam
+        animi. Ipsum, dolorem facere dolores repellat numquam, praesentium incidunt quae laudantium ad minus fugit nihil
+        repellendus excepturi rerum inventore officiis similique iusto iure minima dignissimos optio esse? Earum
+        nesciunt mollitia ad possimus officia natus fugiat, nostrum error ratione dolore rerum repudiandae labore, nam
+        consectetur sint iusto dolorem quisquam ipsa ipsam recusandae soluta, fuga eveniet saepe. Atque numquam sapiente
+        illum laborum. Quasi porro, similique nisi quisquam rem perferendis ad quis hic reiciendis laboriosam culpa
+        aperiam dolor eius error non ipsum natus laborum! Quibusdam eos, ipsum voluptate doloribus laudantium tenetur,
+        magni, corporis obcaecati veniam voluptatibus cupiditate quisquam sit fugiat harum? Quas architecto esse itaque
+        rerum accusamus maiores, asperiores doloribus. Alias sequi adipisci temporibus pariatur cum eligendi molestiae
+        facere officia officiis dolorum! Voluptates saepe accusamus iusto cumque, aliquid eius. Magnam suscipit
+        exercitationem alias quasi iusto ipsum unde ipsa nobis quis reiciendis magni eaque dicta doloribus cum, velit
+        molestiae repudiandae. Odit praesentium esse fugit a deserunt? Ipsa, temporibus ipsum. Et laudantium excepturi
+        labore assumenda praesentium nobis a voluptates? Incidunt eveniet exercitationem aperiam unde ex. Cupiditate
+        repudiandae cumque est ipsam voluptatem et accusantium explicabo. Architecto voluptates aspernatur, repudiandae
+        ratione aut, officiis dolorem, expedita debitis voluptatibus inventore sapiente. Aperiam ratione iste numquam
+        deleniti, labore quasi molestias voluptates omnis recusandae quod quo perferendis nesciunt officia totam ullam
+        impedit sapiente quis. Voluptate sunt voluptatibus itaque placeat obcaecati, officiis adipisci illo unde sint
+        accusamus aliquid fugiat, enim accusantium possimus officia aliquam tempore minima mollitia harum sapiente
+        cupiditate architecto magnam, voluptatum eligendi! Nam ab distinctio quasi dolor soluta minima praesentium,
+        autem hic aspernatur, assumenda fugit, rem et molestiae possimus facilis temporibus tenetur cumque qui veritatis
+        eos? Officia, voluptatibus ratione, repellendus, soluta ullam provident perspiciatis quisquam exercitationem
+        quaerat quod enim voluptatum maxime asperiores consequatur magnam beatae aliquam sed eveniet? Dolores quod
+        obcaecati exercitationem aperiam quasi magni quos nulla ipsam molestiae est ipsum numquam, voluptatem itaque,
+        quas facere nam eum, architecto magnam ab? Dignissimos doloremque optio excepturi aliquid tempore odit
+        asperiores numquam, magnam corrupti illum ad nisi sint accusamus deserunt eligendi consectetur vel nihil natus
+        totam. Perferendis a itaque neque fugit, consequuntur sed! Vitae, perferendis laboriosam obcaecati quibusdam
+        magni, error nihil velit dolorem iste, fugiat dolorum veniam consectetur maxime magnam repudiandae! Veniam
+        pariatur dolore aut quisquam quam asperiores, libero consequatur eveniet nesciunt? Eaque, alias nulla
+        praesentium non aut magnam enim voluptas eos sint ratione quaerat ea recusandae mollitia in dicta nemo ipsum!
+        Labore sequi non perferendis quas vitae eum suscipit, officia necessitatibus laborum animi, id sit fugit.
+        Laboriosam, blanditiis. Libero ipsum praesentium possimus ipsa, distinctio ipsam esse blanditiis! Alias rerum
+        mollitia perferendis quisquam inventore reprehenderit ad. Fugiat, exercitationem accusantium aspernatur at
+        adipisci deleniti officia? Velit quasi voluptates molestiae eligendi modi facere. Incidunt nemo natus ea
+        praesentium ratione aliquam ipsum, vero provident sunt ipsa, impedit itaque consectetur doloremque ad error?
+        Nobis, odit. Magnam expedita alias quisquam eligendi totam earum natus libero laboriosam qui esse nostrum
+        suscipit ab illum porro debitis voluptatem excepturi ad, facere numquam quo, unde aut. Nesciunt explicabo,
+        corrupti itaque non adipisci expedita quod mollitia nihil ullam voluptatibus, eligendi iure asperiores, placeat
+        modi. Dolorem est accusantium sed excepturi obcaecati nihil itaque earum a ea quas, commodi cumque molestias
+        repudiandae blanditiis deleniti magnam sapiente aperiam veritatis? Eaque similique praesentium corrupti odit
+        natus repellendus quibusdam aliquid earum culpa iste! Officia iste perferendis id totam tempora molestiae,
+        aspernatur quaerat temporibus dolor nesciunt expedita cupiditate saepe aliquid rem, vel fuga quia ad vero
+        placeat quis ipsa? Quo, tempora veniam dolorum, odio soluta autem libero voluptatum fuga aliquam id assumenda
+        inventore rem accusantium eum dolore ipsa! Corporis nihil reiciendis, atque eligendi nobis placeat ut animi in
+        perferendis iusto doloribus iure vero. Quia cumque nulla eius enim commodi rem ipsum nisi maxime? Nemo molestiae
+        porro hic! Fugiat delectus qui commodi culpa aperiam quos harum, dolorem autem, eveniet voluptatem mollitia
+        adipisci deserunt. Rerum, dolores? Qui exercitationem eligendi voluptate vero illo, minima debitis, animi
+        aperiam temporibus autem iusto hic dicta aliquid voluptas, consequuntur reprehenderit a dignissimos cupiditate.
+        Voluptatem ut veritatis incidunt veniam iste eum sequi expedita necessitatibus, eos illo pariatur tenetur
+        voluptate officiis cumque!
+    </p>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
