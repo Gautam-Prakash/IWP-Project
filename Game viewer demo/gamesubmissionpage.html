@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 
+	<head>
+		<script>
+
+
+		</script>
+
+	</head>
 	<body>
 		<form>
 			First Name:
+			<br><br>
 			Last Name:
+			<br><br>
 			E-Mail:
+			<br><br>
 			Game Name: <input type="text" name="Name" value="Name">
+			<br><br>
 			Type of Game: <input type="text" name="type" value="Type">
-			Online/Offline: 
-				<select>
-					<option value="Offline" default>Offline</option>
-					<option value="Online">Online</option>
-				</select>
+			<br><br>
+			Online/Offline:
+			<select>
+				<option value="Offline" default>Offline</option>
+				<option value="Online">Online</option>
+			</select>
+			<br><br>
 			Platform:
-			Description:
-			Pricing:
-			Website:
-			Build Files:
-			
-						<input type="submit" value="submit">
+			<select>
+				<option value="Web" default>Web</option>
+				<option value="Downloadable">Downloadable</option>
+			</select>
+			<br><br>
+			Description: <textarea name="description"></textarea>
+			<br><br>
+			Build Files:<input type="file">
+			<br><br>
+
+			<input type="submit" value="submit">
 
 		</form>
 	</body>
